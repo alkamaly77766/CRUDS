@@ -1,5 +1,3 @@
-import anime from "animejs/lib/anime.es.js";
-
 let title = document.getElementById('title')
 let price = document.getElementById('price');
 let taxes = document.getElementById('taxes');
@@ -19,13 +17,6 @@ let tmp;
 let dataPro;
 let moodS = 'searchtitle';
 
-anime({
-    targets:'div',
-    translateX:250,
-    rotate:'1turn',
-    backgroundColor:'#fff',
-    duration:800
-});
 
 if (localStorage.pro != null) {
     dataPro = JSON.parse(localStorage.pro);
